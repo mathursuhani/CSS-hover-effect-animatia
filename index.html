@@ -6,16 +6,20 @@
     <title>Hower Effect-Animatia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .box{
+        .common{
             width: 280px;
             height: 212px;
-            background-image: url(./img/1.jpg);
+        }
+        .box{
+           background-image: url(./img/1.jpg);
             background-size: cover;
             box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
             position: relative;
             overflow: hidden;
+            float: left;
+            margin: 12px;
+            cursor: pointer;
             }
-
         .overlay{
             width: 280px;
             height: 212px;
@@ -30,7 +34,6 @@
         .box:hover .overlay{
             top: 0px;
         }
-
         .overlay > a{
             display: inline-block;
             width: 40px;
@@ -44,10 +47,25 @@
             left: 90px;
             color:#464646
         }
-
         .banchor{
             left: 140px !important;
         }
+        .overlay2{
+            top: 0px;
+            left:-280px
+        }
+        .box:hover .overlay2{
+            left: 0px;
+        }
+        .overlay3{
+            top: 212px;
+            left: 0px;
+        }
+        .box:hover .overlay3{
+            bottom: 0px;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -57,5 +75,20 @@
             <a class=banchor href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
     </div>
+    <div class="common box">
+        <div class="overlay overlay2">
+            <a href="#" class="a2_1"><i class="fa-solid fa-link"></i></a>
+            <a class="banchor a2_2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+    <div class="common box">
+        <div class="overlay overlay3">
+            <a href="#" class="a3_1"><i class="fa-solid fa-link"></i></a>
+            <a class="banchor a3_2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+    
+    
+    
 </body>
 </html>
